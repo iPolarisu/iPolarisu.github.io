@@ -1,12 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Tests 1 </title>
+<title>Polarisu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/eb5ff9a967.js" crossorigin="anonymous"></script>
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
 </head>
-<body>
-    <script src="eventos.js"></script>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="https://i.ibb.co/JzNdcP9/lonk2.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa-solid fa-person-digging w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-medium" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">El</span> Polarisu.</h1>
+    <p><s>Computer Science & Engineering Student</s> I like computers</p>
+    <img src="https://i.ibb.co/JzNdcP9/lonk2.jpg" alt="my_boy" class="w3-image" width="30%" height="30%">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Polarisbored</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>
+      I don't know why you are here, but since you already are, you may want to take a look to some of the stuff I've made or said.
+    </p>
+    <p>
+      I try to put into a project anything that crosses my mind and its creative enough.
+    </p>
+    
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="projects">
+    <h2 class="w3-text-light-grey">Just why?</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-content">
+
+      <!-- U-Cursed -->
+      <div class="w3-row w3-margin">
+      
+      <div class="w3-third">
+        <div class="w3-display-container w3-text-white">
+          <img src="https://cdn.discordapp.com/app-icons/745371842570879027/099af3da03aec44ddf54bc8cac02b1e4.png?size=256" alt="U-Cursed" style="width:100%">
+          <div class="w3-display-bottomleft w3-container w3-black"><p>Discord Bot</p></div>
+        </div>
+      </div>
+      <div class="w3-twothird w3-container">
+        <h2>U-Cursed</h2>
+        <p>
+          Discord bot that scraps the U-Cursos website (FCFM - Universidad de Chile) to get information about available Engineering courses via different commands.
+        </p>
+        <p>
+          At the moment the Bot is being hosted at Heroku, not optimal but gets the job done for now (if dynos are available). To invite it you need to use this <a href="https://discord.com/api/oauth2/authorize?client_id=745371842570879027&permissions=51200&scope=bot" target="_blank">invitation</a>.
+        </p>
+        <p>
+          For more information and self hosting, you can check the project's <a href="https://github.com/iPolarisu/u-cursed" target="_blank">GitHub repo</a>.
+        </p>
+      </div>
+      
+      <!-- STIMA.ME -->
+      </div>
+      <div class="w3-row w3-margin">
+      
+      <div class="w3-third">
+        <div class="w3-display-container w3-text-white">
+          <img src="https://i.ibb.co/g7RFgY6/stimame-Icon.jpg" alt="STIMA.ME" style="width:100%">
+          <div class="w3-display-bottomleft w3-container w3-black"><p>Website</p></div>
+        </div>
+      </div>
+      <div class="w3-twothird w3-container">
+        <h2>STIMA.ME</h2>
+        <p>
+          Website that calculates how much value you are getting for every dollar invested in a Steam game (2019 static data). The name of the website is a pun in spanish (estimate me).
+        </p>
+        <p>
+          If available, you can check the Heroku hosted webpage <a href="https://stimame.herokuapp.com/" target="_blank">here</a>.
+        </p>
+        <p>
+          For more information you can check the project's <a href="https://github.com/iPolarisu/stimame" target="_blank">GitHub repo</a> and the associated <a href="https://deepnote.com/@polarisnetwork/STIMAME-f1dee203-b2a1-4de5-b655-35c20efb299f" target="_blank">Deepnote notebook</a>.
+        </p>
+      </div>
+      
+      </div>
+
+      <!-- Retry? -->
+      <div class="w3-row w3-margin">
+      
+      <div class="w3-third">
+        <div class="w3-display-container w3-text-white">
+          <img src="https://i.ibb.co/mT87NGC/retry.jpg" alt="Retry?" style="width:100%">
+          <div class="w3-display-bottomleft w3-container w3-black"><p>Videogame</p></div>
+        </div>
+      </div>
+      <div class="w3-twothird w3-container">
+        <h2>Retry?</h2>
+        <p>
+          Retry? is an arcade/roguelike/bullethell/space-shooter indie videogame with a heavy emphasis on resource management. It has a cool twist in its core mechanic and a meta narrative.
+        </p>
+        <p>
+          It was started as a project for a videogame workshop at university but its development may be continued even though it will be slower.
+        </p>
+        <p>
+          For more information you can check the <a href="https://ipolarisu.itch.io/" target="_blank">itch.io</a> page.
+        </p>
+      </div>
+
+      <!-- CarlosverseXP -->
+      <div class="w3-row w3-margin">
+      <div class="w3-third">
+        <div class="w3-display-container w3-text-white">
+          <img src="https://lh3.googleusercontent.com/FM3hWoNu4OPoe2Dyqkz3-zzPpoVknxjN82u5S0sewIHkvMuSl2FRoPEjP9VdkMX3vVsvPqb1BESy00JZElW4tVZIw4BAOJuDbLHmQg=s168" alt="Carlosverse" style="width:100%">
+          <div class="w3-display-bottomleft w3-container w3-black"><p>??????</p></div>
+        </div>
+      </div>
+      <div class="w3-twothird w3-container">
+        <h2>CarlosverseXP</h2>
+        <p>
+          I don't even know what to say really. This is just a meme we had with some friends that got out of hands.
+        </p>
+        <p>
+          Really? Still interested? you can check the <a href="https://opensea.io/collection/carlosversexp" target="_blank">OpenSea</a> page then.
+        </p>
+      </div>
+      
+    <!-- End grid -->
+    </div>
+
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">What people think about me:</h3>
+
+    <img src="https://i.discogs.com/ohZt_W38HawkCys1h7qIg5c1cQkxISYnqSjuquHf37I/rs:fit/g:sm/q:90/h:558/w:440/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM4ODIt/MTUxNjY2MTU1NC0z/NjkyLmpwZWc.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Damon Albarn.</span> English Musician.</p>
+    <p>Who?</p><br>
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg/800px-LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Linus Torvalds.</span> Linux Kernel.</p>
+    <p>Kuka?</p><br>
+    
+    <img src="https://pbs.twimg.com/profile_images/914211724412166144/Bf2Yij9b_400x400.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Hideo Kojima.</span> Kojima Productions.</p>
+    <p>誰？</p><br>
+
+    <img src="https://esports.as.com/2020/01/07/Willyrex.png?hash=aa6efb4b2031c04d442cbc9ca6391b4790ad0130" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Guillermo Díaz.</span> NFT-Man.</p>
+    <p>¿Quién？</p><br>
+  <!-- End Portfolio Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge" id="contact">
+    <a href="https://t.me/iPolarisu" target="_blank"><i class="fa-brands fa-telegram w3-hover-opacity"></i></a>
+    <a href="https://github.com/iPolarisu" target="_blank"><i class="fa-brands fa-github w3-hover-opacity"></i></a>
+    <p class="w3-medium">
+        If you got here, you may want to reach out to some of the above. Feel free to do so.
+    </p>
+    <p class="w3-medium">
+        Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a>
+    </p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
 </body>
 </html>
